@@ -1,0 +1,24 @@
+import numpy as np
+chemistshop=np.array([
+    ["Medicine-1",600,9,600*9],
+    ["Medicine-2",300,4,300*4],
+    ["Medicine-3",150,2,150*2]],dtype=object)
+
+def add_item(item_name,price,quantity):
+    chemistshop.append([item_name,price,quantity])
+
+def update(item_name,quantity):
+    for medicine in chemistshop:
+        if chemistshop[medicine][0]== item_name:
+            n= chemistshop[2]
+            chemistshop[2]= n - quantity
+
+sales= np.sum(chemistshop,axis=0)
+
+array(['Medicine-1Medicine-2Medicine-3', 1050, 15, 6900], dtype=object)
+
+
+totalsales=sales[3]
+
+plt.plot(totalsales,chemistshop,color="blue")
+
