@@ -4,7 +4,7 @@ chemistshop=np.array([
     ["Medicine-2",300,4,300*4],
     ["Medicine-3",150,2,150*2]],dtype=object)
 
-def add_item(item_name,price,quantity):
+def add_item(item_name,price,quantity): dlkf v
     chemistshop.append([item_name,price,quantity])
 
 def update(item_name,quantity):
