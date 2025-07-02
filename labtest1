@@ -7,7 +7,7 @@ chemistshop=np.array([
 def add_item(item_name,m gfkmprice,quantity): dlkf v
     chemistshop.append([item_name,price,quantity])
 
-def update(item_name,quantity):
+def update(item_name,quantity): v gfgvf
     for medicine in chemistshop:
         if chemistshop[medicine][0]== item_name:
             n= chemistshop[2]
